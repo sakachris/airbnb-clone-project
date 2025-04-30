@@ -203,3 +203,55 @@ Implements indexing and caching strategies to enhance performance and scalabilit
 
 ### 📚 API Documentation
 Includes well-documented RESTful and GraphQL APIs following the OpenAPI standard. This ensures that frontend developers and third-party integrators can easily understand and use the backend services.
+
+
+
+# 🔐 **API Security**
+
+Securing the backend APIs is critical to protect sensitive user information, ensure trusted interactions, and maintain the overall integrity of the Airbnb Clone platform. The following measures are implemented to safeguard the system:
+
+---
+
+### ✅ Authentication
+All API endpoints are protected using secure authentication mechanisms such as token-based authentication (e.g., JWT). Only verified users can access protected resources, ensuring that data and functionality are not exposed to unauthorized parties.
+
+**Why it matters:** Prevents unauthorized access to user accounts, personal data, and private operations.
+
+---
+
+### 🔒 Authorization
+Role-based access control (RBAC) is enforced to restrict actions based on user roles (e.g., guest vs host). For example, only hosts can create property listings, while guests can book properties.
+
+**Why it matters:** Ensures that users can only perform actions they’re permitted to, preventing privilege escalation and misuse.
+
+---
+
+### ⏱️ Rate Limiting
+Rate limiting is implemented to prevent abuse and reduce the risk of denial-of-service (DoS) attacks. It limits the number of API requests from a single IP within a certain timeframe.
+
+**Why it matters:** Protects the server from being overwhelmed by excessive traffic or malicious bots.
+
+---
+
+### 🔐 Data Encryption
+All data transmitted between the client and server is encrypted using HTTPS/TLS. Sensitive data like passwords and payment information are also securely stored and transmitted.
+
+**Why it matters:** Protects user credentials and financial data from interception or tampering.
+
+---
+
+### 🧼 Input Validation & Sanitization
+All user inputs are validated and sanitized to prevent SQL injection, cross-site scripting (XSS), and other injection attacks.
+
+**Why it matters:** Ensures the integrity of the system and prevents malicious code execution or data breaches.
+
+---
+
+### 📜 Audit Logging
+Sensitive operations such as logins, payments, and data updates are logged for audit purposes. These logs help in monitoring activity and identifying suspicious behavior.
+
+**Why it matters:** Provides traceability and accountability, crucial for compliance and incident response.
+
+---
+
+These security layers work together to ensure a secure and reliable experience for users and hosts, safeguarding both data and transactions.
