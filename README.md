@@ -64,3 +64,102 @@ A containerization tool that ensures consistency across development, testing, an
 
 ### 🔁 CI/CD Pipelines
 Automated workflows that test, build, and deploy code changes. Helps ensure code quality and reduces the risk of bugs in production.
+
+
+## 🗃️ Database Design
+
+The backend uses a relational database (PostgreSQL) to model real-world objects like users, properties, bookings, reviews, and payments. Below are the key entities and their core fields, along with how they relate to one another.
+
+---
+
+### 👤 Users
+Represents registered users of the platform (hosts and guests).
+
+**Important Fields:**
+- `id`: Unique identifier
+- `name`: Full name of the user
+- `email`: Email address (used for login)
+- `password`: Hashed user password
+- `is_host`: Boolean to distinguish between guests and hosts
+
+**Relationships:**
+- A user can own multiple properties (if `is_host = True`)
+- A user can make multiple bookings
+- A user can write multiple reviews
+
+---
+
+### 🏠 Properties
+Represents accommodation listings available for booking.
+
+**Important Fields:**
+- `id`: Unique identifier
+- `owner`: Foreign key to `User` (host)
+- `title`: Title of the property
+- `description`: Detailed property info
+- `location`: Physical address or coordinates
+
+**Relationships:**
+- Each property is owned by one user (host)
+- A property can have multiple bookings
+- A property can receive multiple reviews
+
+---
+
+### 📅 Bookings
+Represents a reservation made by a user for a property.
+
+**Important Fields:**
+- `id`: Unique identifier
+- `user`: Foreign key to `User` (guest)
+- `property`: Foreign key to `Property`
+- `check_in`: Start date of the stay
+- `check_out`: End date of the stay
+
+**Relationships:**
+- A booking is made by one user
+- A booking is for one property
+- A booking can have one associated payment
+
+---
+
+### 💳 Payments
+Tracks payment transactions for bookings.
+
+**Important Fields:**
+- `id`: Unique identifier
+- `booking`: One-to-one relationship with `Booking`
+- `amount`: Total amount paid
+- `payment_method`: e.g., Credit Card, PayPal
+- `status`: Payment status (e.g., successful, failed)
+
+**Relationships:**
+- Each payment is linked to one booking
+- A booking must have one payment to be confirmed
+
+---
+
+### 📝 Reviews
+Allows users to leave feedback on properties they’ve stayed in.
+
+**Important Fields:**
+- `id`: Unique identifier
+- `user`: Foreign key to `User` (guest)
+- `property`: Foreign key to `Property`
+- `rating`: Numeric rating (e.g., 1–5)
+- `comment`: Textual feedback
+
+**Relationships:**
+- A user can write many reviews
+- A property can have many reviews
+- Each review is linked to one user and one property
+
+---
+
+### 🔄 Entity Relationships Summary
+- One **User** ⟶ many **Properties**
+- One **User** ⟶ many **Bookings**
+- One **Property** ⟶ many **Bookings**
+- One **Booking** ⟶ one **Payment**
+- One **Property** ⟶ many **Reviews**
+- One **User** ⟶ many **Reviews**
