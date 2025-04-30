@@ -255,3 +255,28 @@ Sensitive operations such as logins, payments, and data updates are logged for a
 ---
 
 These security layers work together to ensure a secure and reliable experience for users and hosts, safeguarding both data and transactions.
+
+
+## 🔁 CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of testing, building, and deploying the application. This ensures that new code changes are reliably and consistently delivered to production with minimal manual intervention.
+
+---
+
+### 🚀 Why CI/CD is Important
+- **Automated Testing:** Ensures that all code changes are automatically tested, reducing bugs and regressions.
+- **Faster Deployment:** Speeds up the development cycle by deploying changes automatically after they pass tests.
+- **Consistency:** Ensures the same process is followed every time, reducing human error and deployment issues.
+- **Feedback Loop:** Provides quick feedback to developers when issues are introduced, enabling faster fixes.
+
+---
+
+### 🛠️ Tools Used
+- **GitHub Actions:** Automates workflows for testing, linting, building Docker images, and deploying to staging or production environments.
+- **Docker:** Ensures consistent environments across development, testing, and production using containerization.
+- **Docker Compose / Kubernetes (optional):** Manages multi-container deployments locally or in production.
+- **Coverage & Linting Tools:** Tools like `pytest`, `coverage.py`, `flake8`, or `black` can be integrated into the pipeline to enforce code quality.
+
+---
+
+This pipeline improves productivity, reliability, and confidence in the release process, making it easier to scale and maintain the project.
