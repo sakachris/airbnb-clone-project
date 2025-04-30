@@ -36,3 +36,31 @@ Defines the system’s architecture and makes high-level design decisions. Ensur
 ### 📅 Project Manager
 Coordinates the team’s workflow, sets deadlines, manages sprints, and ensures alignment between developers, stakeholders, and business goals. Acts as a communication bridge and risk mitigator.
 
+## ⚙️ Technology Stack
+
+This project uses a modern, scalable technology stack to support robust API development, efficient data management, and smooth deployment.
+
+### 🐍 Django
+A high-level Python web framework used to build and manage the backend logic. It provides built-in features like authentication, admin interface, and ORM for database interaction.
+
+### 🌐 Django REST Framework (DRF)
+An extension of Django that simplifies building RESTful APIs. It provides tools for serialization, authentication, and CRUD operations with minimal configuration.
+
+### 🧠 GraphQL
+A query language and runtime that allows clients to request exactly the data they need. It offers more flexibility and efficiency than traditional REST endpoints, especially for complex data relationships.
+
+### 🐘 PostgreSQL
+A powerful, open-source relational database used to store and manage structured data such as users, bookings, properties, and reviews.
+
+### 🐇 Celery
+A task queue that enables the execution of asynchronous tasks. Used for background processes like sending confirmation emails, processing payments, or generating reports.
+
+### 🚀 Redis
+An in-memory data store used as a caching layer and message broker for Celery. It improves performance by reducing database load and handling real-time operations.
+
+### 🐳 Docker
+A containerization tool that ensures consistency across development, testing, and production environments. It packages the application and its dependencies into isolated containers.
+
+
+### 🔁 CI/CD Pipelines
+Automated workflows that test, build, and deploy code changes. Helps ensure code quality and reduces the risk of bugs in production.
