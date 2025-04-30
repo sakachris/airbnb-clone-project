@@ -163,3 +163,43 @@ Allows users to leave feedback on properties they’ve stayed in.
 - One **Booking** ⟶ one **Payment**
 - One **Property** ⟶ many **Reviews**
 - One **User** ⟶ many **Reviews**
+
+
+## 🧩 Feature Breakdown
+
+The Airbnb Clone project includes several core features that replicate the essential functionality of the Airbnb platform. Each feature is built to ensure usability, scalability, and a seamless user experience for both guests and hosts.
+
+---
+
+### 👤 User Management
+Handles user registration, authentication, and profile management. This feature allows both guests and hosts to sign up, log in securely, and manage their personal information and preferences.
+
+---
+
+### 🏘️ Property Management
+Enables hosts to create, update, and manage their property listings. It provides functionality for storing details like title, description, and location to help attract potential guests.
+
+---
+
+### 📅 Booking System
+Allows users to reserve properties by selecting check-in and check-out dates. It tracks booking details and ensures that a property is unavailable during overlapping reservations.
+
+---
+
+### 💳 Payment Processing
+Integrates with payment gateways to process transactions securely. It records booking-related payments, tracks payment status, and ensures accurate financial reporting.
+
+---
+
+### 📝 Review System
+Allows guests to leave reviews and ratings for properties after their stay. This feature helps build trust among users and provides hosts with feedback for improvement.
+
+---
+
+### ⚡ Data Optimization
+Implements indexing and caching strategies to enhance performance and scalability. This ensures fast data access and minimal server load during high-traffic scenarios.
+
+---
+
+### 📚 API Documentation
+Includes well-documented RESTful and GraphQL APIs following the OpenAPI standard. This ensures that frontend developers and third-party integrators can easily understand and use the backend services.
