@@ -1,6 +1,7 @@
-# airbnb-clone-project
+# __airbnb-clone-project__
+<br>
 
-## 🏡 Airbnb Clone Backend - Overview
+# 🏡 Airbnb Clone Backend - Overview
 
 This project is a backend system for an **Airbnb Clone**, built to replicate the core functionalities of Airbnb. It supports user authentication, property listings, bookings, payments, and reviews. The system is designed to be scalable, secure, and efficient for real-world applications.
 
@@ -14,7 +15,9 @@ This project is a backend system for an **Airbnb Clone**, built to replicate the
 The main teach stack used are:
 **Django & Django REST Framework**, **GraphQL**, **PostgreSQL**, **Celery & Redis**, **Docker**, **CI/CD Pipelines**.
 
-## 👥 Team Roles
+<br><br>
+
+# 👥 Team Roles
 
 The development of the Airbnb Clone backend involves a cross-functional team. Each member plays a critical role in building, testing, and maintaining the platform.
 
@@ -36,7 +39,9 @@ Defines the system’s architecture and makes high-level design decisions. Ensur
 ### 📅 Project Manager
 Coordinates the team’s workflow, sets deadlines, manages sprints, and ensures alignment between developers, stakeholders, and business goals. Acts as a communication bridge and risk mitigator.
 
-## ⚙️ Technology Stack
+<br><br>
+
+# ⚙️ **Technology Stack**
 
 This project uses a modern, scalable technology stack to support robust API development, efficient data management, and smooth deployment.
 
@@ -61,8 +66,9 @@ An in-memory data store used as a caching layer and message broker for Celery. I
 ### 🐳 Docker
 A containerization tool that ensures consistency across development, testing, and production environments. It packages the application and its dependencies into isolated containers.
 
+<br><br>
 
-### 🔁 CI/CD Pipelines
+# 🔁 CI/CD Pipelines
 Automated workflows that test, build, and deploy code changes. Helps ensure code quality and reduces the risk of bugs in production.
 
 
@@ -164,8 +170,9 @@ Allows users to leave feedback on properties they’ve stayed in.
 - One **Property** ⟶ many **Reviews**
 - One **User** ⟶ many **Reviews**
 
+<br><br>
 
-## 🧩 Feature Breakdown
+# 🧩 Feature Breakdown
 
 The Airbnb Clone project includes several core features that replicate the essential functionality of the Airbnb platform. Each feature is built to ensure usability, scalability, and a seamless user experience for both guests and hosts.
 
@@ -204,7 +211,7 @@ Implements indexing and caching strategies to enhance performance and scalabilit
 ### 📚 API Documentation
 Includes well-documented RESTful and GraphQL APIs following the OpenAPI standard. This ensures that frontend developers and third-party integrators can easily understand and use the backend services.
 
-
+<br><br>
 
 # 🔐 **API Security**
 
@@ -256,8 +263,9 @@ Sensitive operations such as logins, payments, and data updates are logged for a
 
 These security layers work together to ensure a secure and reliable experience for users and hosts, safeguarding both data and transactions.
 
+<br><br>
 
-## 🔁 CI/CD Pipeline
+# 🔁 CI/CD Pipeline
 
 Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of testing, building, and deploying the application. This ensures that new code changes are reliably and consistently delivered to production with minimal manual intervention.
 
