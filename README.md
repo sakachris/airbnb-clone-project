@@ -68,11 +68,8 @@ A containerization tool that ensures consistency across development, testing, an
 
 <br><br>
 
-# 🔁 CI/CD Pipelines
-Automated workflows that test, build, and deploy code changes. Helps ensure code quality and reduces the risk of bugs in production.
 
-
-## 🗃️ Database Design
+# 🗃️ Database Design
 
 The backend uses a relational database (PostgreSQL) to model real-world objects like users, properties, bookings, reviews, and payments. Below are the key entities and their core fields, along with how they relate to one another.
 
